@@ -1,0 +1,62 @@
+header {
+  height: 60px;
+  width: 100%;
+  position: relative;
+  // background-color: $background-btn-color;
+
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+    &__img {
+      height: 100%;
+    }
+
+    &__text {
+      font-weight: bold;
+      font-size: 25px;
+      color: setTextColor(main);
+      align-self: center;
+      margin-left: 10px;
+    }
+  }
+
+  .change-unit {
+    width: 80px;
+    height: 30px;
+    border: 1px solid $border-color;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &__text{
+      width: 50%;
+      height: 100%;
+      line-height: 28px;
+      text-align: center;
+      color: setTextColor(secondary);
+      user-select: none;
+    }
+
+    &__background {
+      background-color: $background-btn-color;
+      height: 90%;
+      width: 48%;
+      position: absolute;
+      border-radius: 10px;
+      z-index: -1;
+      left: 2px;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}

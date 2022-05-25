@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+$background-btn-color: #50C5F6;
+$border-color: #888888;
+$border-color-darker: darken($border-color, 40%);
+$text-colors: (
+  'main': #494949,
+  'secondary': #000,
+);
+
+@function setTextColor($color) {
+  @return map-get($text-colors, $color);
+}

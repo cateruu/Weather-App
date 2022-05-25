@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@100;300;400;500;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  font-size: 15px;
+  font-weight: 100;
+  text-align: center;
+  line-height: 50px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+header {
+  height: 60px;
+  width: 100%;
+  position: relative;
+}
+
+header .logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .logo__img {
+  height: 100%;
+}
+
+header .logo__text {
+  font-weight: bold;
+  font-size: 25px;
+  color: #494949;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 10px;
+}
+
+header .change-unit {
+  width: 80px;
+  height: 30px;
+  border: 1px solid #888888;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+header .change-unit__text {
+  width: 50%;
+  height: 100%;
+  line-height: 28px;
+  text-align: center;
+  color: #000;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+header .change-unit__background {
+  background-color: #50C5F6;
+  height: 90%;
+  width: 48%;
+  position: absolute;
+  border-radius: 10px;
+  z-index: -1;
+  left: 2px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.main-wrapper {
+  width: 60vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: calc(100% - 50px - 60px);
+}
+
+main .search {
+  margin-top: 40px;
+  border: 1px solid #888888;
+  border-radius: 10px;
+  width: 50%;
+  height: 45px;
+  padding: 1px;
+  position: relative;
+}
+
+main .search__input {
+  height: 100%;
+  width: 80%;
+  border: none;
+  padding-left: 5px;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+main .search__input:focus {
+  outline: none;
+}
+
+main .search__btn {
+  height: 100%;
+  width: calc(20% - 4px);
+  border: none;
+  border-radius: 10px;
+  background-color: #50C5F6;
+  font-size: 1rem;
+  color: #494949;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+main .search__btn:hover {
+  color: #000;
+}
+
+main .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+main .content section {
+  width: 100%;
+  margin: 20px 0;
+}
+
+main .content .main-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .content .main-data__location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .content .main-data__location__img {
+  height: 40px;
+}
+
+main .content .main-data__location__country {
+  font-weight: 400;
+}
+
+main .content .main-data__temperature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .content .main-data__temperature__degrees {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+main .content .main-data__temperature__description {
+  font-weight: 300;
+}
+
+main .content .main-data__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main .content .main-data__info div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 20%;
+}
+
+main .content .main-data__info div h5 {
+  font-weight: 300;
+}
+
+main .content .main-data__info div p {
+  font-size: 1.1rem;
+}
+
+main .content .air-quality {
+  width: 40%;
+  height: 250px;
+  border: 1px solid #888888;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+main .content .last-updated {
+  text-align: center;
+  font-weight: 300;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Paweł Kromołowski">
+  <meta name="description" content="Weather app made with WeatherAPI.">
+  <meta name="keywords" content="Weather, Weather Forecast">
+
+  <link rel="shortcut icon" href="./images/sunny.png" type="image/x-icon">
+
+  <title>Weather App</title>
+
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <div class="main-wrapper">
+    <header>
+      <section class="logo">
+        <img src="./images/logo.png" alt="weather app logo" class="logo__img">
+        <span class="logo__text">Weather App</span>
+      </section>
+      <section class="change-unit">
+        <div class="change-unit__background"></div>
+        <section class="change-unit__text active" data-unit="celsius">C</section>
+        <section class="change-unit__text" data-unit="fahrenheit">F</section>
+      </section>
+    </header>
+
+    <main>
+      <section class="search">
+        <input type="text" placeholder="Enter your location..." class="search__input">
+        <button class="search__btn">Search</button>
+      </section>
+
+      <article class="content">
+        <section class="main-data">
+          <section class="main-data__location">
+            <img src="./images/sunny.png" alt="current weather representation" class="main-data__location__img">
+            <h2 class="main-data__location__city">Warsaw</h2>
+            <h4 class="main-data__location__country">Poland</h4>
+          </section>
+          <section class="main-data__temperature">
+            <p class="main-data__temperature__degrees">30</p>
+            <p class="main-data__temperature__description">Partly cloudy</p>
+          </section>
+          <section class="main-data__info">
+            <div>
+              <h5>Pressure</h5>
+              <p>1013.0 hPa</p>
+            </div>
+            <div>
+              <h5>Wind Direction</h5>
+              <p>WNW</p>
+            </div>
+            <div>
+              <h5>Humidity</h5>
+              <p>83%</p>
+            </div>
+          </section>
+        </section>
+        <section class="air-quality">
+          <h3>Air Quality</h3>
+
+        </section>
+        <section class="last-updated">
+          Last updated: <span>2022-05-25 17:00</span>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      Powered by <a href="https://www.weatherapi.com/" target="_blank">WeatherAPI</a>
+    </footer>
+  </div>
+</body>
+</html>
