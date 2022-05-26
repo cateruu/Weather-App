@@ -6,5 +6,5 @@ Used API: https://www.weatherapi.com
 Used Technologies: HTML5, SCSS, JavaScript(ES6+)
 
 JS: 
- Modules
- async/await
+ -Modules
+ -async/await
