@@ -6,6 +6,6 @@
   Used Technologies: HTML5, SCSS, JavaScript(ES6+)
 
   JS: 
-    - Modules
-    - async/await
-    - Dom manipulation
+  - Modules
+  - async/await
+  - Dom manipulation
