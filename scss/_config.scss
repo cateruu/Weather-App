@@ -18,3 +18,9 @@ $text-colors: (
 @function setTextColor($color) {
   @return map-get($text-colors, $color);
 }
+
+@mixin mobile {
+  @media screen and (max-width: 1024px){
+    @content;
+  }
+}

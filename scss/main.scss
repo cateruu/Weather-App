@@ -6,12 +6,16 @@
   width: 60vw;
   height: 100vh;
   margin: 0 auto;
+
+  @include mobile {
+    width: 100vw;
+    height: auto;
+  }
 }
 
 main {
   display: flex;
   flex-direction: column;
-  //justify-content: space-around;
   align-items: center;
   height: calc(100% - 50px - 60px);
 
@@ -52,6 +56,10 @@ main {
       &:hover {
         color: setTextColor(secondary);
       }
+    }
+
+    @include mobile {
+      width: 90%;
     }
   }
 
@@ -126,7 +134,7 @@ main {
     }
 
     .air-quality {
-      width: 300px;
+      width: 280px;
       height: 250px;
       border: 1px solid $border-color;
       border-radius: 10px;
@@ -159,6 +167,11 @@ main {
         width: calc(100% - 20px);
         font-size: 10px;
         font-weight: 100;
+
+        a {
+          text-decoration: none;
+          color: setTextColor(main);
+        }
       }
     }
 

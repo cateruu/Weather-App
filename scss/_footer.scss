@@ -11,5 +11,10 @@ footer {
 
   a {
     text-decoration: none;
+    color: setTextColor(main);
+  }
+
+  @include mobile {
+    position: relative;
   }
 }
