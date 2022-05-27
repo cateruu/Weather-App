@@ -11,7 +11,8 @@ const humidityElem = document.querySelector('.humidity');
 const lastUpdatedElem = document.querySelector('.last-updated span');
 
 export function insertData(data) {
-  const { current: { temp_c: temp, humidity, pressure_mb: pressure, wind_dir: direction, last_updated, condition: { text, icon }}, 
+  const { current: { temp_c: temp, humidity, pressure_mb: pressure, wind_dir: direction, last_updated, condition: { text, icon },
+          air_quality: { co, o3, no2, so2, pm2_5, pm10 } }, 
           location: { name, country } } = data;
 
   weatherImg.setAttribute('src', icon);
@@ -19,12 +20,14 @@ export function insertData(data) {
   cityElem.innerText = name;
   countryElem.innerText = country;
 
-  degreesElem.innerText = temp;
+  degreesElem.innerHTML = temp + '&#8451';
   weatherDescriptionElem.innerText = text;
 
   pressureElem.innerText = pressure + ' hPa';
   windDirectionElem.innerText = direction;
   humidityElem.innerText = humidity + '%';
+
+console.log(data.current.air_quality['us-epa-index']);
 
   lastUpdatedElem.innerText = last_updated;
 }
