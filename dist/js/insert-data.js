@@ -37,7 +37,7 @@ export function insertData(data) {
   humidityElem.innerText = humidity + '%';
 
   // Air Quality
-  carbonElem.innerText = ` ${Math.round(co * 100) / 100} (μg/m3)`;
+  carbonElem.innerText = ` ${Math.round(co * 100) / 100}`;
   ozoneElem.innerText = ` ${Math.round(o3 * 100) / 100}`;
   nitrogenElem.innerText = ` ${Math.round(no2 * 100) / 100}`;
   sulphurElem.innerText = ` ${Math.round(so2 * 100) / 100}`;
